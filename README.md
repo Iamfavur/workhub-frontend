@@ -4,6 +4,33 @@ WorkHub is a modern freelance marketplace web application inspired by platforms 
 It has a timed deadline counter that is used to show how much time is left for a seller to deliver an order. The counter typically updates in real-time (counting down seconds, minutes, hours, or days) and helps both buyers and sellers track progress and meet deadlines efficiently.
 ---
 
+
+## 🚀 Live Demo
+
+You can try out WorkHub live here:  
+**[Live URL](https://workhub-frontend-git-main-iamfavurs-projects.vercel.app/)**
+
+### Quick Test Login
+
+- **Seller Login:**  
+  - username: `user1`  
+  - Password: `user1`
+
+- **Buyer Login:**  
+  - username: `user2`  
+  - Password: `user2`
+
+### Quick Test Instructions
+
+1. **Login** using the credentials above.
+2. **As a buyer:**  
+   - Search for orders like `"logo design"` or `"web development"` in the search bar.
+   - Place an order for a gig.
+3. **As a seller:**  
+   - View your orders and see the timed deadline counter in action.
+   - Respond to messages or deliver an order.
+
+
 ## Table of Contents
 
 - [Features](#features)
