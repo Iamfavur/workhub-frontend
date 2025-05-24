@@ -21,7 +21,7 @@ function Featured() {
               <img src="./img/search.png" alt="" />
               <input
                 type="text"
-                placeholder='Try "building mobile app"'
+                placeholder='Try "logo design"'
                 onChange={(e) => setInput(e.target.value)}
                 style={{ width: "300px" }}
               />
