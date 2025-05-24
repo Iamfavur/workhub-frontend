@@ -104,7 +104,7 @@ client/
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/Iamfavur/workhub-frontend.git
-   cd workhub-frontend/client
+   cd workhub-frontend
    ```
 
 2. **Install frontend dependencies:**
