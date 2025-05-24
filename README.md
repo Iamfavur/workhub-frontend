@@ -103,8 +103,8 @@ client/
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/Iamfavur/WorkHub.git
-   cd WorkHub/client
+   git clone https://github.com/Iamfavur/workhub-frontend.git
+   cd workhub-frontend/client
    ```
 
 2. **Install frontend dependencies:**
