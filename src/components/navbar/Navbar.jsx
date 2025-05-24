@@ -66,7 +66,7 @@ function Navbar() {
           <span>English</span>
           {!currentUser?.isSeller && <span>Become a Seller</span>}
 
-          {currentUser && (userBalance !== undefined && <span>${userBalance}</span>)}
+          {currentUser && (userBalance !== undefined && <span>&#8358;{userBalance}</span>)}
 
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
