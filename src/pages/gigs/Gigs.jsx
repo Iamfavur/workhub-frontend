@@ -3,7 +3,8 @@ import "./Gigs.scss";
 import GigCard from "../../components/gigCard/GigCard";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+
 
 function Gigs() {
   const [sort, setSort] = useState("sales");
@@ -12,6 +13,9 @@ function Gigs() {
   const maxRef = useRef();
 
   const { search } = useLocation();
+  const cat = new URLSearchParams(search)?.get("cat");
+  const searchParams = new URLSearchParams(search)?.get("search");
+
 
   const { isLoading, error, data, refetch } = useQuery({
     queryKey: ["gigs"],
@@ -24,6 +28,15 @@ function Gigs() {
           return res.data;
         }),
   });
+
+  function formatSentence(sentence) {
+    if (!sentence) return "";
+    return sentence
+      .split("-")
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  }
+
 
   const reSort = (type) => {
     setSort(type);
@@ -41,10 +54,10 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">{"WorkHub > Graphics & Design >"}</span>
-        <h1>AI Artists</h1>
+        <span className="breadcrumbs">{"WorkHub > Services >"}</span>
+        <h1>{formatSentence(cat) || formatSentence(searchParams)}</h1>
         <p>
-          Explore the boundaries of art and technology with WorkHub's AI artists
+          Explore the boundaries of your imagination with our diverse range of {cat} services.
         </p>
         <div className="menu">
           <div className="left">
@@ -73,10 +86,10 @@ function Gigs() {
         </div>
         <div className="cards">
           {isLoading
-            ? "loading"
+            ? "loading......"
             : error
-            ? "Something went wrong!"
-            : data.map((gig) => <GigCard key={gig._id} item={gig} />)}
+              ? "Something went wrong!"
+              : data.map((gig) => <GigCard key={gig._id} item={gig} />)}
         </div>
       </div>
     </div>

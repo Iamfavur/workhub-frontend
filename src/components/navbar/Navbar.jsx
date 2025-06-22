@@ -111,31 +111,34 @@ function Navbar() {
           <hr />
           <div className="menu">
             <Link className="link menuLink" to="/">
-              Graphics & Design
+              Shoe Repair
             </Link>
             <Link className="link menuLink" to="/">
-              Video & Animation
+              Bakery
             </Link>
             <Link className="link menuLink" to="/">
-              Writing & Translation
+              Carpentry
             </Link>
             <Link className="link menuLink" to="/">
-              AI Services
+              Tailoring
             </Link>
             <Link className="link menuLink" to="/">
-              Digital Marketing
+              Plumbing
             </Link>
             <Link className="link menuLink" to="/">
-              Music & Audio
+              Electrical Services
             </Link>
             <Link className="link menuLink" to="/">
-              Programming & Tech
+              Painting
             </Link>
             <Link className="link menuLink" to="/">
-              Business
+              Hairdressing & Barbing
             </Link>
             <Link className="link menuLink" to="/">
-              Lifestyle
+              Catering
+            </Link>
+            <Link className="link menuLink" to="/">
+              Laundry
             </Link>
           </div>
           <hr />

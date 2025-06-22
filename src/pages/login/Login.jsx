@@ -7,17 +7,23 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(null);
+    setIsLoading(true);
     try {
       const res = await newRequest.post("/auth/login", { username, password });
+      setIsLoading(false);
       localStorage.setItem("currentUser", JSON.stringify(res?.data));
       navigate("/")
     } catch (err) {
       setError(err.response.data);
+      console.log(err);
+      setIsLoading(false);
     }
   };
 
@@ -39,7 +45,7 @@ function Login() {
           type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Login</button>
+        <button type="submit">{!isLoading ? "Login" : "Loading..."}</button>
         {error && error}
       </form>
     </div>

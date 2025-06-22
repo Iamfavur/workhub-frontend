@@ -65,84 +65,84 @@ function Home() {
           <div className="items">
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/graphics-design.d32a2f8.svg"
+                src="https://images.unsplash.com/photo-1591964447401-b6a88f3dafb7?q=80&w=1712&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
               <div className="line"></div>
-              <span>Graphics & Design</span>
+              <span>Shoe Repair</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/online-marketing.74e221b.svg"
+                src="https://images.unsplash.com/photo-1610896016252-69180ae2d486?q=80&w=1617&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
               <div className="line"></div>
 
-              <span>Digital Marketing</span>
+              <span>Bakery</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg"
+                src="https://images.unsplash.com/photo-1742715362469-77e74523b313?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5pZ2VyaWElMjBDYXJwZW50cnl8ZW58MHx8MHx8fDA%3D"
                 alt=""
               />
               <div className="line"></div>
-              <span>Writing & Translation</span>
+              <span>Carpentry</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/video-animation.f0d9d71.svg"
+                src="https://images.unsplash.com/photo-1629738224207-d967f40f7db3?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
               <div className="line"></div>
-              <span>Video & Animation</span>
+              <span>Tailoring</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/music-audio.320af20.svg"
+                src="https://images.unsplash.com/photo-1657558665549-bd7d82afed8c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG5pZ2VyaWElMjBQbHVtYmVyfGVufDB8fDB8fHww"
                 alt=""
               />
               <div className="line"></div>
-              <span>Music & Audio</span>
+              <span>Plumbing</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/programming.9362366.svg"
+                src="https://plus.unsplash.com/premium_photo-1678766821881-9d6899c22e58?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
               <div className="line"></div>
-              <span>Programming & Tech</span>
+              <span>Electrical Services</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/business.bbdf319.svg"
+                src="https://images.unsplash.com/photo-1633681138600-295fcd688876?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
               <div className="line"></div>
-              <span>Business</span>
+              <span>Hairdressing & Barbing</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/lifestyle.745b575.svg"
+                src="https://images.unsplash.com/photo-1742900280861-32bed068938b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
               <div className="line"></div>
-              <span>Lifestyle</span>
+              <span>Painting</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/data.718910f.svg"
+                src="https://plus.unsplash.com/premium_photo-1683140870012-ee79567c10c7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG5pZ2VyaWElMjBBdXRvJTIwTWVjaGFuaWN8ZW58MHx8MHx8fDA%3D"
                 alt=""
               />
               <div className="line"></div>
-              <span>Data</span>
+              <span>Auto Mechanic</span>
             </div>
             <div className="item">
               <img
-                src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/photography.01cf943.svg"
+                src="https://plus.unsplash.com/premium_photo-1723914019579-b6d43116603c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
               <div className="line"></div>
-              <span>Photography</span>
+              <span>Home Cleaning</span>
             </div>
           </div>
         </div>

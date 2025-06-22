@@ -8,17 +8,17 @@ function Footer() {
         <div className="top">
           <div className="item">
             <h2>Categories</h2>
-            <span>Graphics & Design</span>
-            <span>Digital Marketing</span>
-            <span>Writing & Translation</span>
-            <span>Video & Animation</span>
-            <span>Music & Audio</span>
-            <span>Programming & Tech</span>
-            <span>Data</span>
-            <span>Business</span>
-            <span>Lifestyle</span>
-            <span>Photography</span>
-            <span>Sitemap</span>
+            <span>Shoe Repair</span>
+            <span>Bakery</span>
+            <span>Carpentry</span>
+            <span>Tailoring</span>
+            <span>Plumbing</span>
+            <span>Electrical Services</span>
+            <span>Painting</span>
+            <span>Catering</span>
+            <span>Laundry</span>
+            <span>Home Cleaning</span>
+            <span>Hairdressing & Barbing</span>
           </div>
           <div className="item">
             <h2>About</h2>

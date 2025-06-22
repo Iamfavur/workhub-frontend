@@ -80,10 +80,21 @@ const Add = () => {
             />
             <label htmlFor="">Category</label>
             <select name="cat" id="cat" onChange={handleChange}>
-              <option value="design">Design</option>
-              <option value="web">Web Development</option>
-              <option value="animation">Animation</option>
-              <option value="music">Music</option>
+              <option value="shoe-repair">Shoe Repair</option>
+              <option value="bakery">Bakery</option>
+              <option value="carpentry">Carpentry</option>
+              <option value="tailoring">Tailoring</option>
+              <option value="plumbing">Plumbing</option>
+              <option value="electrical">Electrical Services</option>
+              <option value="hairdressing">Hairdressing & Barbing</option>
+              <option value="painting">Painting</option>
+              <option value="auto-mechanic">Auto Mechanic</option>
+              <option value="home-cleaning">Home Cleaning</option>
+              <option value="event-decoration">Event Decoration</option>
+              <option value="catering">Catering</option>
+              <option value="laundry">Laundry</option>
+              <option value="bricklaying">Bricklaying</option>
+              <option value="furniture-making">Furniture Making</option>
             </select>
             <div className="images">
               <div className="imagesInputs">
@@ -115,7 +126,7 @@ const Add = () => {
             <button onClick={handleSubmit}>Create</button>
           </div>
           <div className="details">
-            <label htmlFor="">Service Title</label>
+            <label htmlFor="">Short Title</label>
             <input
               type="text"
               name="shortTitle"

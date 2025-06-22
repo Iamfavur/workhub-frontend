@@ -9,7 +9,7 @@ import Reviews from "../../components/reviews/Reviews";
 function Gig() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [deliveryDays, setDeliveryDays]= useState(5)
+  const [deliveryDays, setDeliveryDays] = useState(5)
 
   const { isLoading, error, data } = useQuery({
     queryKey: ["gig"],
@@ -37,13 +37,13 @@ function Gig() {
   const formatDate = (timestamp) => {
     const date = new Date(timestamp);
     const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0'); 
+    const month = String(date.getMonth() + 1).padStart(2, '0');
     const day = String(date.getDate()).padStart(2, '0');
     return `${year}-${month}-${day}`;
   };
   const formattedDate = formatDate(dataUser?.createdAt)
 
-  const sellerId = dataUser?._id 
+  const sellerId = dataUser?._id
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   const buyerId = currentUser?._id;
   const gigId = data?._id
@@ -76,20 +76,20 @@ function Gig() {
   return (
     <div className="gig">
       {isLoading ? (
-        "loading"
+        "loading........."
       ) : error ? (
-        "Something went wrong!"
+        "Something went wrong!!!!"
       ) : (
         <div className="container">
           <div className="left">
             <span className="breadcrumbs">
-              Workhub {">"} Graphics & Design {">"}
+              Workhub {">"} Services {">"}
             </span>
             <h1>{data.title}</h1>
             {isLoadingUser ? (
-              "loading"
+              "loading........."
             ) : errorUser ? (
-              "Something went wrong!"
+              "Something went wrong!!!!"
             ) : (
               <div className="user">
                 <img
@@ -110,14 +110,16 @@ function Gig() {
                 )}
               </div>
             )}
-            {data.images.length > 0 ? 
+            {data.images.length > 0 ?
               <Slider slidesToShow={1} arrowsScroll={1} className="slider">
-                { data?.images?.map((img) => (
+                {data?.images?.map((img) => (
                   <img key={img} src={img} alt="" />
                 ))}
-              </Slider> : (
-              <p>No images available</p>
-            )}
+              </Slider> :
+                data?.cover ? <img src= {data?.cover} style={{maxWidth:"500px"}}/> :
+                (
+                  <p>No images available</p>
+                )}
 
             <h2>About This Gig</h2>
             <p>{data.desc}</p>
@@ -209,19 +211,19 @@ function Gig() {
                 name="title"
                 placeholder="Enter a number"
                 min="1"
-                onChange={(e)=>setDeliveryDays(e.target.value)}
+                onChange={(e) => setDeliveryDays(e.target.value)}
                 required
                 style={inputStyle}
               />
-             
+
             </div>
             <button onClick={handleContact} >Contact Me</button>
 
             <Link to={`/new-order/${buyerId}/${sellerId}/${gigId}/${deliveryDays}`} >
-            <button>create order now</button>
+              <button>create order now</button>
             </Link>
 
-            
+
           </div>
         </div>
       )}

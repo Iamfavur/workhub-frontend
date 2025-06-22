@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import "./CatCard.scss";
 
 function CatCard({ card }) {
+  const category = card?.title?.toLowerCase().replace(/\s+/g, "-");
   return (
-    <Link to="/gigs?cat=design">
+    <Link to={`/gigs?cat=${category}`}>
       <div className="catCard">
         <img src={card.img} alt="" />
         <span className="desc">{card.desc}</span>
