@@ -74,6 +74,7 @@ const Orders = () => {
     const checkOrdersStatus = async () => {
       const expiredOrders = data.filter(order => {
         const timeLeft = calculateTimeLeft(order.deliveryCountdownEnd);
+        console.log(order.deliveryCountdownEnd)
         return timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0;
       });
 
@@ -88,20 +89,21 @@ const Orders = () => {
   const calculateTimeLeft = (endTime) => {
     const difference = +new Date(endTime) - +new Date();
     let timeLeft = {};
-  
+
     if (difference > 0) {
       timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60),
       };
     } else {
-      timeLeft = { hours: 0, minutes: 0, seconds: 0 };
+      timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
     }
-  
+
     return timeLeft;
   };
-  
+
 
   return (
     <div className="orders">
@@ -160,7 +162,7 @@ const Orders = () => {
                       </button>
                     </td>
                     <td>
-                      {`${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`}
+                      {`${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`}
                     </td>
                   </tr>
                 );
