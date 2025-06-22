@@ -69,7 +69,7 @@ function Footer() {
         <div className="bottom">
           <div className="left">
             <h2>Workhub</h2>
-            <span>© Workhub International Ltd. 2023</span>
+            <span>© Workhub International Ltd. 2025</span>
           </div>
           <div className="right">
             <div className="social">
